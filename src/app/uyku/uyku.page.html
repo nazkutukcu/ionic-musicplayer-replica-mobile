@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>uyku</ion-title>
+    <ion-button>
+      <ion-back-button></ion-back-button>
+      </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  
+    <img width="300"
+    height="200"src = "assets/img/tophits.jpg" alt="">
+    <ion-list>
+      <ion-item button *ngFor="let track of liste" (click)="start(track)">
+      <ion-label  >
+     {{track.name}}
+      </ion-label>
+     </ion-item>
+    </ion-list> 
+    
+</ion-content>

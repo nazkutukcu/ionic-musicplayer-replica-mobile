@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>pop</ion-title>
+    <ion-button >
+      <ion-back-button>geri</ion-back-button  >
+    </ion-button>
+  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <img src="assets/img/tophits.jpg" alt="">
+ 
+  <ion-list>
+    <ion-item button *ngFor="let track of playlist" (click)="start(track)">
+    <ion-label [color]="track==activeTrack ? 'success' : light "  >
+   {{track.name}}
+    </ion-label>
+   </ion-item>
+  </ion-list> 
+  </ion-content>
+
+ 
+
+</ion-content>

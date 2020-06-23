@@ -1,0 +1,8 @@
+{
+  "name": "selmos",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
