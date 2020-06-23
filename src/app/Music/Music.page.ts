@@ -29,20 +29,20 @@ export class MusicPage {
       path : './assets/mp3/KneeSocks.mp3',
     },
     {
-      name:'Bohemian Rhapsody',
-      path:'./assets/mp3/bohemian-rhapsody.mp3',
-    },
-    {
-      name:'Zombie',
-      path:'./assets/mp3/zombie.mp3',
-    },
-    {
       name:'I Love You Baby',
       path:'./assets/mp3/ILoveYouBaby.mp3',
     },
     {
       name:'Hit The Road Jack',
       path:'./assets/mp3/HitTheRoadJack.mp3',
+    },
+    {
+      name:'Bohemian Rhapsody',
+      path:'./assets/mp3/bohemian-rhapsody.mp3',
+    },
+    {
+      name:'Zombie',
+      path:'./assets/mp3/zombie.mp3',
     },
     {
       name:'Castle',
@@ -68,7 +68,6 @@ export class MusicPage {
       name:'Rockstar',
       path:'./assets/mp3/Rockstar.mp3',
     }
-
   ];
  activeTrack : Track = null;
  player : Howl = null;
@@ -82,6 +81,7 @@ start (track : Track){
     this.player.stop();
   }
  this.player = new Howl({
+   html5:true,
   src : [track.path],
   onplay:() => {
   console.log('onplay');
@@ -91,11 +91,10 @@ start (track : Track){
   },
   onend : () => {
     console.log('onend');
-
   }
  });
  this.player.play();
-  }
+}
 
 togglePlayer(pause){
  this.isPlaying = !pause ;
