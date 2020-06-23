@@ -10,11 +10,11 @@ export interface Track{
 }
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  selector: 'app-Music',
+  templateUrl: 'Music.page.html',
+  styleUrls: ['Music.page.scss']
 })
-export class Tab1Page {
+export class MusicPage {
   playlist: Track[]=[
     {
       name :'Do I Wanna Know' ,

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Track } from '../tab1/tab1.page';
+import { Track } from '../Music/Music.page';
 
 @Component({
   selector: 'app-uyku',
