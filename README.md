@@ -1,6 +1,6 @@
 # ionic-spotify-replica-mobile
 
- npm i nin inmiş olması gerekli.
+ npm i'nin inmiş olması gerekli.
  
 "npm i @angular-devkit/build-angular" komutunun yazılması gerekli.
 
