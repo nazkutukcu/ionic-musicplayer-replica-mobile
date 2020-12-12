@@ -1,4 +1,4 @@
-# ionic-spotify-replica-mobile
+# ionic-musicplayer-replica-mobile
 
  npm i'nin inmiş olması gerekli.
  
